@@ -1,25 +1,27 @@
-import '../src/css/App.css'
-import Filme from "./Filme"
-import Filtro from "./Filtro"
-import NavBar from "./NavBar"
-import Footer from './Footer'
-import EXIBICAO, { FilmesTuplaType } from "./exibicoes"
+import "../src/css/App.css";
+import Filme from "./Filme";
+import Filtro from "./Filtro";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
+import EXIBICAO, { FilmesTuplaType } from "./exibicoes";
 
-interface ListaFilmes {filmes: Array<FilmesTuplaType> };
+interface ListaFilmes {
+  filmes: Array<FilmesTuplaType>;
+}
 
 export default function App() {
   return (
-    <div className='app'>
+    <div className="app">
       <header>
-      <NavBar></NavBar>
-    </header>
+        <NavBar></NavBar>
+      </header>
+
       {EXIBICAO.map((exibicao) => (
-        <Filtro
-          tipo={exibicao[0]}
-        >
+        <Filtro tipo={exibicao[0]}>
           <ListaFilmesProps filmes={exibicao[1]} />
         </Filtro>
       ))}
+      
       <footer>
         <Footer></Footer>
       </footer>
@@ -27,7 +29,7 @@ export default function App() {
   );
 }
 
-function ListaFilmesProps({filmes}:ListaFilmes) {
+function ListaFilmesProps({ filmes }: ListaFilmes) {
   return (
     <>
       {filmes.map((filme) => (
