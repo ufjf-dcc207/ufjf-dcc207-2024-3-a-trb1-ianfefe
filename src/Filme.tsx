@@ -1,4 +1,4 @@
-import './Filme.css'
+import '../src/css/Filme.css'
 
 export interface FilmeProps {
     titulo: string;

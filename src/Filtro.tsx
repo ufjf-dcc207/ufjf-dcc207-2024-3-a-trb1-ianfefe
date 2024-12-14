@@ -1,4 +1,4 @@
-import './Filtro.css'
+import '../src/css/Filtro.css'
 
 import { ReactNode } from "react"
 

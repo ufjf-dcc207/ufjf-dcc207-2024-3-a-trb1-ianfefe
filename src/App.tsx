@@ -1,4 +1,4 @@
-import './App.css'
+import '../src/css/App.css'
 import Filme from "./Filme"
 import Filtro from "./Filtro"
 import NavBar from "./NavBar"
