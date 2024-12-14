@@ -1,8 +1,7 @@
-import React from 'react'
 import './App.css'
-import Filme, { FilmeProps } from "./Filme"
+import Filme from "./Filme"
 
-function App() {
+export default function App() {
 
   return (
     <>

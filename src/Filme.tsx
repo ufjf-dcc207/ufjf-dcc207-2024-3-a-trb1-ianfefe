@@ -1,4 +1,3 @@
-import React from 'react';
 export interface FilmeProps {
     titulo: string;
     descricao: string;
