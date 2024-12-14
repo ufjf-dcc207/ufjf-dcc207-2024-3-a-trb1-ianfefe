@@ -1,0 +1,14 @@
+.filtro {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    padding: 5px;
+}
+
+.cabecalho-genero {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    padding: 15px 20px;
+    color: white;
+}

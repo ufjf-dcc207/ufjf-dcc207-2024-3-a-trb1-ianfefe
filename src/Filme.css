@@ -1,0 +1,10 @@
+.filme {
+    display: flexbox;
+    justify-items: center;
+    width: 15em;
+    height: 22em;
+}
+.imagem {
+    float: left;
+    max-width: 95%;
+}

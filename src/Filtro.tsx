@@ -1,3 +1,5 @@
+import './Filtro.css'
+
 import { ReactNode } from "react"
 
 interface ExibicaoProps {
@@ -8,7 +10,8 @@ interface ExibicaoProps {
 export default function Filtro(filtro: ExibicaoProps){
     return (
         <>
-            <div className="filtro">{filtro.children}</div>
+        <div className='cabecalho-genero'>Gênero:{filtro.tipo}</div>
+        <div className="filtro">{filtro.children}</div>
         </>
     )
 }
