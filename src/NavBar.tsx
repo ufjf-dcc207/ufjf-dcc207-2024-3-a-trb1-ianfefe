@@ -9,10 +9,12 @@ export default function NavBar() {
         <nav>
           <ul>
             <li>Home</li>
+            <li>Ação</li>
             <li>Animação</li>
-            <li>Terror</li>
-            <li>comedia</li>
+            <li>Comédia</li>
             <li>Ficção</li>
+            <li>Romance</li>
+            <li>Terror</li>
           </ul>
         </nav>
       </div>
