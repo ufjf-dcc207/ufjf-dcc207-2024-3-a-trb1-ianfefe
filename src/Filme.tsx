@@ -13,7 +13,7 @@ export default function Filme(filme: FilmeProps) {
     return (
         <>
         <div className="filme">
-            <img className="imagem" src={filme.imagem} alt={filme.titulo}></img>
+            <img className="imagem" src={filme.imagem} alt={"Capa de " + filme.titulo}></img>
             <div className="titulo">{filme.titulo}</div>
         </div>
         </>
