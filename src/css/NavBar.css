@@ -2,26 +2,30 @@
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    background-color: #141414;
+    background-color: black;
     color: white;
+    height: 80px;
+    width: 100%;
   }
   
   .logo {
     font-size: 24px;
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: auto;
+    padding-top: 20px;
+
+
   }
   
-  .menu {
-    margin-right: auto;
-  }
   
   nav ul {
+    
     list-style: none;
     display: flex;
     gap: 20px;
     padding: 0;
     margin: 0;
+    padding-top: 20px;
   }
   
   nav ul li {
@@ -31,4 +35,10 @@
   
   nav ul li:hover {
     color: #e50914;
+  }
+
+  hr {
+    width: 100%;
+    margin: 0;
+    border: 1px solid #e50914;
   }

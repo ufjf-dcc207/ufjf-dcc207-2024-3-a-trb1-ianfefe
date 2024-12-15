@@ -7,7 +7,7 @@
 
 .cabecalho-genero {
     display: flex;
-    background-color: black;
+    background-color: rgb(10, 9, 9);
     align-items: center;
     padding: 15px 20px;
     color: white;

@@ -1,5 +1,6 @@
 import "../src/css/App.css";
 import NavBar from "./NavBar";
+import Filtro from "./Filtro";
 import Footer from "./Footer";
 import ListaDeFilmes from "./ListaDeFilmes";
 
@@ -9,12 +10,12 @@ export default function App() {
       <header>
         <NavBar></NavBar>
       </header>
-      
-      <ListaDeFilmes></ListaDeFilmes>
 
-      <footer>
-        <Footer></Footer>
-      </footer>
+      <Filtro>
+        <ListaDeFilmes></ListaDeFilmes>
+      </Filtro>
+
+      <Footer></Footer>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
-import Filme, {FilmeProps} from "./Filme";
 import { useEffect, useState } from "react";
+import Filme, {FilmeProps} from "./Filme";
 import axios from "axios";
 
 export default function ListaDeFilmes() {
