@@ -18,6 +18,8 @@ export default function NavBar() {
           </ul>
         </nav>
       </div>
+      <hr />
+
     </>
   )
 }
