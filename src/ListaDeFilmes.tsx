@@ -1,7 +1,7 @@
 "use client";
-
-import axios from "axios";
+import Filme, {FilmeProps} from "./Filme";
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function ListaDeFilmes() {
     const [movies, setMovies] = useState([]);
@@ -25,10 +25,10 @@ export default function ListaDeFilmes() {
     }
     
     return (
-        <ul className="lista_filme">
-            {movies.map((movie) =>
-                <li>{movie.title}</li>
+        <>
+            {movies.map((filme: FilmeProps) =>
+                <Filme key={filme.title} genres={filme.genres} title={filme.title} poster_path={`https://image.tmdb.org/t/p/original${filme.poster_path}`}></Filme>
             )}
-        </ul>
+        </>
     )
 }
