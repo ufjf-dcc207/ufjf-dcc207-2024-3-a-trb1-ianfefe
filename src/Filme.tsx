@@ -1,20 +1,18 @@
 import '../src/css/Filme.css'
 
 export interface FilmeProps {
-    titulo: string;
-    descricao: string;
-    duracao: number;
-    classificacao: number;
-    genero: string[];
-    imagem: string;
+    key: string;
+    title: string;
+    genres: number[];
+    poster_path: string;
 }
 
 export default function Filme(filme: FilmeProps) {
     return (
         <>
         <div className="filme">
-            <img className="imagem" src={filme.imagem} alt={"Capa de " + filme.titulo}></img>
-            <div className="titulo">{filme.titulo}</div>
+            <img className="imagem" src={filme.poster_path} alt={"Capa de " + filme.title}></img>
+            <div className="titulo">{filme.title}</div>
         </div>
         </>
     )
