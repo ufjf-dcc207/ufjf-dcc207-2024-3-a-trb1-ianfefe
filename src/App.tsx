@@ -3,6 +3,7 @@ import Filme from "./Filme";
 import Filtro from "./Filtro";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import ListaDeFilmes from "./ListaDeFilmes";
 import EXIBICAO, { FilmesTuplaType } from "./exibicoes";
 
 interface ListaFilmes {
@@ -22,6 +23,8 @@ export default function App() {
         </Filtro>
       ))}
       
+      <ListaDeFilmes></ListaDeFilmes>
+
       <footer>
         <Footer></Footer>
       </footer>
