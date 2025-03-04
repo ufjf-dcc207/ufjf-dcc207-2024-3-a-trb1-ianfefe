@@ -8,14 +8,14 @@ export default function App() {
   return (
     <div className="app">
       <header>
-        <NavBar></NavBar>
+        <NavBar />
       </header>
 
       <Filtro>
-        <ListaDeFilmes></ListaDeFilmes>
+        <ListaDeFilmes />
       </Filtro>
 
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }

@@ -1,17 +1,16 @@
-import '../src/css/Filtro.css'
+import { ReactNode } from "react";
+import "../src/css/Filtro.css";
 
-import { ReactNode } from "react"
+interface PropsExibicao {
+  tipo?: string;
+  children: ReactNode;
+}
 
-interface ExibicaoProps {
-    tipo?: string;
-    children: ReactNode;
-} 
-
-export default function Filtro(filtro: ExibicaoProps){
-    return (
-        <>
-        <div className='cabecalho-genero'>Gênero: {filtro.tipo}</div>
-        <div className="filtro">{filtro.children}</div>
-        </>
-    )
+export default function Filtro(filtro: PropsExibicao) {
+  return (
+    <>
+      <div className="cabecalho-genero">Gênero: {filtro.tipo}</div>
+      <div className="filtro">{filtro.children}</div>
+    </>
+  );
 }
